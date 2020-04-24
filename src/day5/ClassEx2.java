@@ -21,7 +21,7 @@ public class ClassEx2 {
 		point1 p2 = new point1(10, 10);
 		p2.printPoint();
 		point1.printCount();
-		int x = 10, y = 20;
+		int x = 40, y = 20;
 		p1.movexy(x, y);
 		p1.printPoint();
 	}

@@ -51,20 +51,25 @@ public class test1 {
 				 * 문자 op가 % 이면 두 수의 나머지 결과를 출력하는 코드를 작성하세요.
 				 */
 
-				// 내가 푼것!
 				if(op == '+') {
 					System.out.printf("두수의 합 : %d " , num1+num2 ); // 지시자 하나면 콤마도 하나! 
+					System.out.println();
 					//System.out.printf("%d %c %d = %d\n", num1, op, num2, num1+num2); // 지시자가 네 개라 콤마도 네 개. 
 				}else if(op == '-') {
 					System.out.printf("두수의 차 : %d ", num1-num2);
+					System.out.println();
 				}else if(op == '/') {
 					System.out.printf("두수의 나눈 값 : %d ", num1/num2 );
+					System.out.println();
 				}else if(op == '*') {
 					System.out.printf("두수의 곱 : %d ", num1*num2);
+					System.out.println();
 				}else if(op == '%'){ 
 					System.out.printf("두수의 나머지 : %d ", num1%num2 );
+					System.out.println();
 				}else { // else는 조건식 붙지 않음! 그래서 바로 밑에처럼 출력되게 해주면 좋다.
 					System.out.println(" op + 산술 연산자가 아닙니다. ");
+					System.out.println();
 				}
 
 				/* 선생님 풀이!! 
@@ -90,7 +95,6 @@ public class test1 {
 				}
 				*/
 
-				System.out.println("---------다른경우 줄바꿈");
 
 				switch(op) {
 				case '+' : 
@@ -104,6 +108,9 @@ public class test1 {
 					break;
 				case '*' :	
 					System.out.printf("%d %c %d = %d\n", num1, op, num2, num1*num2);
+					break;
+				case '%' :	
+					System.out.printf("%d %c %d = %d\n", num1, op, num2, num1%num2);
 					break;
 				default : // 마지막에서는 break가 없는 이유는 있어도 그만 없어도 그만이라 그냥 밑의 출력만 되게끔 해줌.
 					System.out.printf(op + "는 산술 연산자가 아닙니다.");
