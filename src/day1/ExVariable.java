@@ -16,6 +16,7 @@ public class ExVariable {
 		    //System.out.print();//에러
 		    System.out.println(""+(7+7));
 		    System.out.println(""+7+7);
+		    System.out.println();
 		    int num1 = 10, num2 = 20;
 		    System.out.println(num1 +","+num2);
 		    num1 = 9;

@@ -80,13 +80,13 @@ public class testEx5 {
 			}
 			System.out.println();
 		}
-		/* 기능 : 배열 arr에 정수 num의 값이 있는지 없는지 확인하는 메서드//확인하는 것이 빠진코드
-		 * 		= arr에 num이 있다 또는 없다 
-		 * 매개변수 : 정수 배열 int []arr, int num
-		 * 리턴타입 : void
-		 * 메서드명 : isDuplicated
-		 * public static (리턴 : 없음) (메서드명 : me)(매개변수 : int []arr){}
-		 */
+/* 기능 : 배열 arr에 정수 num의 값이 있는지 없는지 확인하는 메서드//확인하는 것이 빠진코드
+ * 		= arr에 num이 있다 또는 없다 
+ * 매개변수 : 정수 배열 int []arr, int num
+ * 리턴타입 : void
+ * 메서드명 : isDuplicated
+ * public static (리턴 : 없음) (메서드명 : me)(매개변수 : int []arr){}
+ */
 		public static void me(int []arr, int num) {
 			Scanner scan = new Scanner(System.in);
 			num = scan.nextInt();
@@ -103,13 +103,13 @@ public class testEx5 {
 				
 			}
 		}
-		/* 기능 : 배열 arr에 정수 num의 값이 있는지 없는지 확인하는 메서드
-		 * 		= arr에 num이 있다 또는 없다 
-		 * 매개변수 : 정수 배열 int []arr, int num // 확인하려는 정수
-		 * 리턴타입 : 있는지 없는지 확인 : boolean
-		 * 메서드명 : is
-		 * public static (리턴 : boolean) (메서드명 : is)(매개변수 : int []arr){}
-		 */
+/* 기능 : 배열 arr에 정수 num의 값이 있는지 없는지 확인하는 메서드
+ * 		= arr에 num이 있다 또는 없다 
+ * 매개변수 : 정수 배열 int []arr, int num // 확인하려는 정수
+ * 리턴타입 : 있는지 없는지 확인 : boolean
+ * 메서드명 : is
+ * public static (리턴 : boolean) (메서드명 : is)(매개변수 : int []arr){}
+ */
 		public static boolean isDuplicated(int []arr, int num) {
 			for(int i = 0;i<arr.length; i++) {
 				if(arr[i] == num) {

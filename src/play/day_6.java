@@ -2,10 +2,10 @@ package play;
 
 import java.util.Scanner;
 
-public class Ex4_24 {
+public class day_6 {
 
 	public static void main(String[] args) {
-
+/* q를 입력할 때까지 입력한 문자를 출력하는 무한루프*/
 		char ch;
 		Scanner scan = new Scanner(System.in);
 		ch = scan.next().charAt(0);

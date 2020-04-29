@@ -6,12 +6,13 @@ public class RecursiveEx1 {
 
 		System.out.println(fact(5));
 	}
+	
 //팩토리얼 메서드
 	public static int fact(int num) {
 		if(num==1||num==0)
 			return 1;
-		if(num<0) //음수일경우
-			return 0;		//위의 조건은 끝내기위한 코드
+		if(num<0)		 //음수일경우
+			return 0;		//위의 조건들은 끝내기위한 코드
 		return num*fact(num-1);
 	}
 }
