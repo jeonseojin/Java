@@ -33,7 +33,7 @@ public class TestEx1 {
 	public static boolean createArray(int min, int max, int n, int []arr) {
 		if(arr==null)
 			return false;
-		if(max-min+1<n)
+		if(max-min+1<n)/*랜덤으로 만들 수 있는 최대수를 계산해서 무한루프로 빠지지않고 결과가 나올 수 있도록 사용*/
 			return false;
 		int cnt = 0 ;//현재 배열에 저장된 원소의 갯수
 		while(cnt<n) {
@@ -47,6 +47,7 @@ public class TestEx1 {
 		
 		
 	}
+/* └min과 max 사이에서 중복되지 않도록 하기위한 메서드*/
 	
 	
 	public static int random(int max, int min) {
@@ -62,6 +63,7 @@ public class TestEx1 {
 		}
 		System.out.println();
 	}
+/* └배열을출력하는메서드(배열의값을 콘솔에 출력)*/
 	
 	public static boolean isDuplicated(int []arr, int num) {
 		for(int i = 0;i<arr.length; i++) {
@@ -71,5 +73,5 @@ public class TestEx1 {
 		}
 		return false;	
 	}
-	
+/* └중복이되는지아닌지확인하는메서드 참 또는 거짓*/	
 }

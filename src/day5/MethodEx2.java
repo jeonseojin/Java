@@ -29,7 +29,7 @@ public class MethodEx2 {
 	 * 메서드명 : cal
 	 */
 	public static double  cal2(int num1, char op, int num2){
-		double res = 0.0;
+		/*double res = 0.0;
 		switch(op) {
 		case '+' : res = num1 + num2; break;
 		case '-' : res = num1 - num2; break;
@@ -37,7 +37,15 @@ public class MethodEx2 {
 		case '/' : res = (double)num1 / num2; break;
 		case '%' : res = num1 % num2; break;
 		}
-		return res;
+		return res;*/
+		switch(op) {
+		case '+':	return num1 + num2;	
+		case '-':	return num1 - num2;
+		case '*':	return num1 * num2;
+		case '%':	return num1 % num2;
+		case '/':	return (double)num1 / num2;
+		default:	return 0;
+		}
 	}
 
 }
