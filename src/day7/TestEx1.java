@@ -31,8 +31,7 @@ public class TestEx1 {
 	 * max - min +1 >= n 이면 배열 생성 가능 , 아니면 배열 생성 실패
 	*/
 	public static boolean createArray(int min, int max, int n, int []arr) {
-		if(arr==null)
-			return false;
+		if(arr==null)	return false;
 		if(max-min+1<n)/*랜덤으로 만들 수 있는 최대수를 계산해서 무한루프로 빠지지않고 결과가 나올 수 있도록 사용*/
 			return false;
 		int cnt = 0 ;//현재 배열에 저장된 원소의 갯수
