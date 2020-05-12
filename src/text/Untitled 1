@@ -1,0 +1,82 @@
+학생들을 관리하는 프로그램을 작성하세요.
+- 학생 정보 : 학년, 반, 번호, 이름, 국어, 영어, 수학 등
+- 기능 : 학생 정보 추가, 학생정보 수정, 학생정보 삭제, 학생정보출력
+
+예시 메뉴
+1. 학생정보추가
+2. 학생정보수정
+3. 학생정보삭제
+4. 학생정보 출력
+5. 종료
+메뉴를 선택하세요. : 1
+
+1. 테이터 관리를 위한 작업 
+ > 변수나 클래스를 이용
+학생정보 > Student 클래스
+과목 > Subject 클래스
+2. 기능 구현
+ > main메소드에 바로 구현
+ > 기능을 인터페이스로 정의하고, 해당 인터페이스를 구현하는 구현 클래스
+interface Manage{
+	public int insertStdent(Strudent []arr, Sturdent std);//학생추가
+	public int modifyStdent(Strudent []arr, Sturdent std);//학정보수정
+	public int deleteStdent(Strudent []arr, Sturdent std);//학생정보삭제
+	public int printStdent(Strudent []arr, int count);//출력
+3. 테스트
+
+
+학생정보 : 학생(학년grade ,반cla ,번호 num,이름name)
+	  과목 (국korean,영english,수mathematics) 
+학생 클래스에 학년 ( 반 ( 번호 (이름)))
+class Student {
+private String name = "";
+	private int grade;//학년
+	private int classNum;//반
+	private int num;//번호
+	private Subject kor,eng, math;//국영수
+}
+
+int example = 5;
+		Scanner scan = new Scanner(System.in);
+		 do{
+			System.out.println("1. 학생정보추가");
+			System.out.println("2. 학생정보수정");
+			System.out.println("3. 학생정보삭제");
+			System.out.println("4. 학생정보 출력");
+			System.out.println("5. 종료 ");
+			example = scan.nextInt();
+		}while(example != 5);
+		scan.close();
+		
+
+		
+1. 학생 정보 추가 기능
+	학생의 학년, 반, 번호, 이름을 입력 받음 		
+	과목정보를 입력할 것인지를 묻는 안내문을 출력
+	과목정보를 입력한다고 대답하면 몇과목 입력할 것인지를 물어봄
+	입력받은 횟수만큼 과목명, 중간, 기말, 수행평가, 출석 점수를 입력
+2. 학생 정보 수정 기능
+	-수정할 학생의 학년, 반, 번호를 입력받음
+	-검색해서 없으면 없다고 하고 종료
+	-있으면 학생의 수정할 이름을 입력하고 과목정보를 추가할질 여부를 물음
+	-과목 수정을 할 경우 과목명을 입력해서 검색
+	-없으면 종료, 있으면 중간, 기말, 수행, 출석점수를 입력받고 종료
+	-과목을 추가할 경우 추가할 과목의 과목명, 중간, 기말, 수행, 출석점수 입력받고 종료
+
+3. 학생정보 삭제 기능
+	-삭제할 학생의 학년, 반, 번호를 입력받음
+	-없으면 없다고 출력, 있으면 삭제하고 삭제되었다고 알려줌
+
+4. 학생 정보 출력 기능
+	-전체 학생정보를 출력
+
+
+
+* 모든클래스는 최상의클래스인 오브젝트를 상속받음
+	equals 서로같을경우(나중에다시배움)
+	equal => 우리가 만들어낸것
+	
+	
+	
+	
+	
