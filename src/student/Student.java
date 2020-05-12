@@ -35,6 +35,9 @@ public class Student {
 	public int getNum() {	return num;}
 	public void setNum(int num) {this.num = num;}
 
+	
+	
+	
 /*성적 배열*/
 	public void setScore(Subject...score) {
 		this.score = new Subject[score.length];
@@ -49,6 +52,7 @@ public class Student {
 			this.score[i] = new Subject(score[i]);	
 			}
 		}
+
 /*성적출력*/
 	public void printScore() {
 		if(score == null) return;
@@ -58,6 +62,7 @@ public class Student {
 			
 		}
 	}
+
 /*Main에서 modifyStudent에서 사용*/
 	public void addScore(Subject[] addscore) {
 		int aSize = 0, bSize = 0;
