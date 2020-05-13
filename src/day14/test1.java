@@ -28,7 +28,7 @@ public class test1 {
 		}return res.toString();
 	}
 	
-/*	반복문
+/*	내생각 반복문
  * public static void star(int a) {
 
 			for(int j=1;j<=a;j++) {
