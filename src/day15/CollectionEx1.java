@@ -69,7 +69,7 @@ public class CollectionEx1 {
 		printList(list);
 		}
 
-private static void printList(/*ArrayList와 LinkedList 모두 옴*/List<Num> list) {
+private static void printList(/*ArrayList와 LinkedList 모두 사용가능*/List<Num> list) {
 	for(Num tmp : list) {//향상된 for문을 사용하여 값을 출력
 		System.out.print(tmp+" ");			
 	}System.out.println();

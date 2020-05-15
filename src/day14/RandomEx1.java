@@ -24,7 +24,7 @@ public class RandomEx1 {
 		 * trim()는 결과가 String(문자열)이기 때문에 trim()을 하고 나서 이어서
 		 * 바로 String의 멤버 메소드인 charAt()을 호출할 수 있다.
 		 */
-		System.out.println(str.trim());//1 뒤의 공백이 사라져 엔터줄이 사라짐
+		System.out.println(str.trim());//trim은 공백을 포함하지 않기때문에 엔터를 따로 표시하지 않고 사라지게함
 		System.out.println(str.trim().charAt(2));
 		System.out.println("=============");
 		int max =10,min=1;

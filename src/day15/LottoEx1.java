@@ -98,7 +98,7 @@ public class LottoEx1 {
 /* 기능2 : 최소값과 최대값 사이에서 랜덤한 수를 중복되지 않게 cnt개 만들어서 배열에 저장하여 배열을 반환하는 메소드
  * 매개변수2 : 최소, 최대, 갯수 => int min, int max, int cnt
  * 리턴타입2 : 배열 => int[]
- * 메소브명 : createRandomArray
+ * 메소드명 : createRandomArray
  */
 	public static int[] createRandomArray(int min, int max, int cnt) throws Exception{
 		if(cnt>max-min+1) throw new Exception("랜덤한 수의 범위보다 배열의 크기가 큽니다.");
